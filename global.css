@@ -1,0 +1,198 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding-top: 7.5vh;
+}
+
+* {
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #EA1D2C;
+    --primary-font-color: #222222;
+    --contrast-primary-font-color: #3d3d3d;
+    --primary-bg-color: #efefef;
+    --contrast-primary-bg-color: #f4f4f4;
+}
+
+header {
+    height: 5rem;
+    background-color: var(--contrast-primary-bg-color);
+}
+
+.logo {
+    width: 6rem;
+    height: 4reem;
+}
+
+.offcanvas-header {
+    background-color: var(--contrast-primary-bg-color);
+}
+
+.offcanvas-body {
+    background-color: var(--primary-bg-color);
+}
+
+.dropdown > .dropdown-menu{
+    background-color: var(--primary-bg-color);
+}
+
+.container-fluid {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.navbar-toggler {
+    border: none !important;
+    font-size: 1.6rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.navbar {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.align-content-center {
+    align-items: baseline;
+}
+
+.align-content-center > li {
+    margin-top: 20px;
+}
+
+@media (max-width: 990px) {
+
+    .align-content-center {
+        align-items: start;
+    }
+
+
+    .align-content-center > li {
+        width: 100%;
+    }
+}
+
+/* - - - Tirar o azul do background quando clica em uma opção - Financeiro - - - */
+
+/*.dropdown-item:target {
+    background: none !important;
+    color: #000000 !important;
+} */
+
+.dropdown {
+    width: 100%;
+}
+
+.dropdown-menu {
+    width: 100%;
+    border: 0px solid #ffffff00 !important;
+}
+
+.dropdown-item {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.align-content-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-close-margin {
+    margin-left: 0px !important;
+}
+
+.dropdown-menu > li > .dropdown-item {
+    padding-left: 30px ;
+}
+
+.set-text-menu {
+    font-weight: 500 !important;
+}
+
+.set-title-menu {
+    font-size: 1.8rem !important;
+}
+
+.op-menu {
+    margin-top: 20px;
+    width: 100%;
+    align-items: baseline;
+}
+
+.op-menu > a {
+    text-decoration: none;
+    display: flex;
+    color: black;
+}
+
+.op-menu > a > h5 {
+    width: 90%;
+}
+
+.op-menu > a > i {
+    width: 10%;
+}
+
+.op-acounts-menu {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.acounts {
+    padding: 0px 15px;
+    width: 49%;
+}
+
+.vertical-line {
+    border-left: .5px solid black;
+}
+
+.icon-acounts {
+    padding-right: 30px;
+}
+
+.exit-acount {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.exit-acount > a {
+    text-decoration: none;
+}
+
+.set-color {
+    color: var(--primary-font-color);
+}
+
+
+.scrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 590px) {
+    body {
+        padding-top: 10vw
+    }
+}

@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Navegação - Pesquisa e Filtro  */
+.nav-main {
+    display: flex;
+    background-color: #dcdcdc;
+    border-radius: 4px;
+    margin: auto;
+}
+
+.nav-main div {
+    width: 30rem;
+    height: 4rem;
+}
+
+.search-main {
+    width: 25rem;
+    height: 3rem;
+    background-color: transparent;
+    padding: 0px 10px;
+    font-size: 1.8rem
+}
+
+.filtro-main {
+    
+}
+
+.centralizar {
+    align-items: center;
+    align-content: center;
+}
+
+.search-main:focus {
+    outline: none;
+}
+
+.pesquisa-btn, .filtro-main {
+    padding: 5px;
+    background-color: transparent;
+}
+
+.button-reset {
+    border: none;
+}
+
+.icon-pesquisa {
+    font-size: 1.4rem;
+}
+
+/* Botão Gerar Relatorio */
+.relatorio {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-relatorio {
+    background-color: #dcdcdc;
+    width: 32rem;
+    height: 3rem;
+    font-size: 1.8rem;
+    transition: .5s;
+}
+
+.btn-relatorio:hover {
+    background-color: #e7e7e7;
+    color: #4e4e4e;
+}
+
+/* Faturamento */
+
+.container-graph {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.chart-wrapper {
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .container-faturamento {
+        padding: 10px;
+    }
+}

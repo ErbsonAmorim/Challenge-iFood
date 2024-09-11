@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Responsivo</title>
+
+    <!-- imagem na aba -->
+    <link rel="logo-=simplificada-ifood" href="IFood_logo_simplificada.svg.png">
+
+    <!-- Dashboard-css e global-css -->
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="global.css">
+
+    <!-- Bootstrap-css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body class="scrollbar">
+    <header class="fixed-top">
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+                <div>
+                    <a class="navbar-brand" href="home.html">
+                        <img src="IFood_logo.svg.png" alt="Logo-iFood" class="d-inline-block align-text-top logo">
+                    </a>
+                </div>
+                <div>
+                    <h1>DASHBOARD FINANCEIRO</h1>
+                </div>
+                <button class="navbar-toggler set-title-menu" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header align-content-menu">
+                        <a class="navbar-brand" href="#">
+                            <img src="IFood_logo.svg.png" alt="Logo-iFood" width="60" height="40"
+                                class="offcanvas-title" id="offcanvasNavbarLabel">
+                        </a>
+                        <h2 class="offcanvas-title set-title-menu" id="offcanvasNavbarLabel">MENU</h2>
+                        <button type="button" class="btn-close btn-close-margin set-title-menu"
+                            data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body scrollbar">
+                        <!-- dropdown - financeiro -->
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-content-center">
+                            <li><a class="dropdown-item set-text-menu set-title-menu" href="#">Início</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle set-text-menu set-title-menu" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Financeiro
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item set-title-menu set-text-menu" href="#">Histórico de
+                                            Transações</a></li>
+                                    <li><a class="dropdown-item set-title-menu set-text-menu" href="#">Histórico de
+                                            Vendas</a></li>
+                                    <li><a class="dropdown-item set-title-menu set-text-menu"
+                                            href="dashboard.html">Dashboard
+                                            Financeiro</a></li>
+                                    <li><a class="dropdown-item set-title-menu set-text-menu" href="#">Relatório
+                                            Financeiro</a></li>
+                                    <li><a class="dropdown-item set-title-menu set-text-menu" href="#">Indicador de
+                                            Demanda</a></li>
+                                    <li><a class="dropdown-item set-title-menu set-text-menu" href="#">Estoque de
+                                            Produto</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item set-text-menu set-title-menu" href="#">Sobre Nós</a>
+                            </li>
+                            <li><a class="dropdown-item set-text-menu set-title-menu" href="#">Dúvidas</a>
+                            </li>
+                            <li><a class="dropdown-item set-text-menu set-title-menu" href="#">Sustentabilidade</a></li>
+                            <li><a class="dropdown-item set-text-menu set-title-menu" href="#">iFood News</a>
+                            </li>
+                            <li><a class="dropdown-item set-text-menu set-title-menu" href="#">Contato</a>
+                            </li>
+                        </ul>
+
+                        <hr>
+
+                        <div class="op-menu">
+                            <a href="#">
+                                <h5 class="set-title-menu">Configurações</h5>
+                                <i class="fa-solid fa-gear set-title-menu"></i>
+                            </a>
+                        </div>
+                        <div class="op-acounts-menu">
+                            <div class="op-menu acounts">
+                                <a href="#">
+                                    <i class="icon-acounts fa-solid fa-user set-title-menu"></i>
+                                    <h5 class="set-title-menu">Usuário</h5>
+                                </a>
+                            </div>
+                            <span class="vertical-line"></span>
+                            <div class="op-menu acounts">
+                                <a href="#">
+                                    <i class="icon-acounts fa-solid fa-truck set-title-menu"></i>
+                                    <h5 class="set-title-menu">Negócio</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="exit-acount">
+                            <a href="#">
+                                <h5 class="set-text-menu set-title-menu set-color">Sair</h5>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- campo de pesquisa e filtro -->
+        <nav class="navbar bg-body-tertiary">
+            <div class="nav-main">
+                <div class="centralizar">
+                    <form class="d-flex" role="search">
+                        <input class="search-main button-reset" type="search" placeholder="   Pesquisar..." aria-label="Search">
+                        <button class="button-reset pesquisa-btn" type="submit"><i class="fa-solid fa-magnifying-glass icon-pesquisa"></i></button>
+                    </form>
+                </div>
+                <button class="filtro-main button-reset"><i class="fa-solid fa-filter icon-pesquisa"></i></button>
+            </div>
+        </nav>
+
+        <!-- gerar relatório -->
+        <div class="relatorio">
+            <button class="btn-relatorio button-reset" type="submit">Gerar Relatório</button>
+        </div>
+
+        <!-- Esatimativa de Capital -->
+        <hr>
+        <div>
+            <h2>
+                Estimativa de Capital
+            </h2>
+            <div>
+                <p class="positive">R$ 0.00</p>
+                <p>remanencente em junho</p>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Faturamento -->
+        <div>
+            <h2>Faturamento</h2>
+            <div class="container-faturamento container-graph">
+                <div class="chart-wrapper">
+                    <canvas id="lineChart-faturamento"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reincidência de Clientes -->
+        <div>
+            <div class="container-reincidencia container-graph">
+                <div class="chart-wrapper">
+                    <canvas id="lineChart-reincidencia"></canvas>
+                </div>
+                <p>Reincidência de Clientes</p>
+            </div>
+        </div>
+
+        <!-- Feed Back -->
+        <div>
+            <h2>Feed Back</h2>
+            <div class="container-feed-back container-graph">
+                <div class="chart-wrapper">
+                    <canvas id="lineChart-feed-back"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- benchimarking -->
+        <div>
+            <h2>Benchimarking</h2>
+            <div class="container-benchimarking container-graph">
+                <div class="chart-wrapper">
+                    <canvas id="lineChart-benchimarking"></canvas>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/a765d5a34d.js" crossorigin="anonymous"></script>
+
+    <!-- chart-js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- dashboard-js -->
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
