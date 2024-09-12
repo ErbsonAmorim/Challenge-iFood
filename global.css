@@ -16,7 +16,11 @@ body {
     --primary-font-color: #222222;
     --contrast-primary-font-color: #3d3d3d;
     --primary-bg-color: #efefef;
-    --contrast-primary-bg-color: #f4f4f4;
+    --contrast-primary-bg-color: #f2f2f2;
+    --contrast-secondary-bg-color: #e7e7e7;
+    --positive-color: #006a0b;
+    --negative-color: #aa0000;
+    --neutral-color: #03001c;
 }
 
 header {
@@ -67,6 +71,12 @@ header {
 
 .align-content-center > li {
     margin-top: 20px;
+}
+
+.retornar-icone {
+    font-size: 2.4rem;
+    padding: 5px 10px;
+    color: var(--primary-color);
 }
 
 @media (max-width: 990px) {
@@ -195,4 +205,29 @@ header {
     body {
         padding-top: 10vw
     }
+}
+
+
+@media (max-width: 740px) {
+
+    main {
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+
+}
+
+.positive {
+    color: var(--positive-color);
+}
+.negative {
+    color: var(--negative-color);
+}
+.neutral {
+    color: var(--neutral-color);
+}
+
+strong { 
+    color: #00ffb3
 }

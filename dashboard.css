@@ -1,14 +1,7 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-}
-
 /* Navegação - Pesquisa e Filtro  */
 .nav-main {
     display: flex;
-    background-color: #dcdcdc;
+    background-color: var(--contrast-secondary-bg-color);
     border-radius: 4px;
     margin: auto;
 }
@@ -24,10 +17,6 @@ body {
     background-color: transparent;
     padding: 0px 10px;
     font-size: 1.8rem
-}
-
-.filtro-main {
-    
 }
 
 .centralizar {
@@ -66,12 +55,38 @@ body {
     height: 3rem;
     font-size: 1.8rem;
     transition: .5s;
+    border:.5px solid #4e4e4e;
+    border-radius: 4px;
 }
 
 .btn-relatorio:hover {
     background-color: #e7e7e7;
     color: #4e4e4e;
+    border-color: #d0d0d0;
 }
+
+
+/* Estimativa de Capital */
+
+.estimativa-capital {
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem !important;
+}
+
+.desc-estimativa {
+    width: 40rem;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: .5rem 2rem;
+}
+
+.desc-estimativa p {
+    font-size: 2rem;
+}
+
 
 /* Faturamento */
 
@@ -95,8 +110,92 @@ canvas {
     height: auto;
 }
 
+/* Reincidência de Clientes */
+
+.container-reincidencia {
+    background-color: var(--contrast-secondary-bg-color);
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Benchmarking */
+
+.chart-box {
+    width: 50rem;
+}
+
+/* geral */
+
+main {
+    margin-top: 2rem;
+}
+
+hr {
+    margin: 0 !important;
+}
+
+.container-indicador {
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.format-title {
+    font-weight: 200;
+    font-size: 2rem;
+    margin: 15px;
+}
+
 @media (max-width: 768px) {
-    .container-faturamento {
+
+    .chart-box {
+        max-width: 80%;
+        width: auto;
+    }
+
+    .container-indicador {
+        width: 100%;
+    }
+
+    .container-graph {
         padding: 10px;
+    }
+
+    .desc-estimativa {
+        width: 90%;
+        padding: 10px;
+        margin: auto;
+    }
+
+    .desc-estimativa p {
+        font-size: 1.6rem;
+    }
+
+    .container-reincidencia {
+        padding: 0 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.4rem !important;
+    }
+
+    .nav-main {
+        width: 95%;
+        justify-content: space-evenly;
+    }
+
+    .btn-relatorio {
+        width: 95%;
+    }
+
+    .format-title {
+        margin: 5px 10px;
+    }
+
+    .desc-estimativa {
+        padding: 0;
     }
 }

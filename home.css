@@ -168,10 +168,6 @@ main {
 
 @media (max-width: 740px) {
 
-    main {
-        width: 100%;
-    }
-
     .indicadores {
         display: block;
     }
