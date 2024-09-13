@@ -59,7 +59,6 @@ main {
 
 .marcadores-saldo-RCL {
     background-color: var(--primary-color);
-    width: 70rem;
     height: 120px;
     margin: 10px;
     border-radius: 8px;
@@ -159,11 +158,6 @@ main {
     font-weight: 700;
 }
 
-
-.carousel {
-    width: 300px;
-    height: 200px;
-}
 
 
 @media (max-width: 740px) {

@@ -23,15 +23,34 @@ body {
     --neutral-color: #03001c;
 }
 
-header {
-    height: 5rem;
-    background-color: var(--contrast-primary-bg-color);
-}
-
 .logo {
     width: 6rem;
     height: 4reem;
 }
+
+
+.text-bold {
+    font-weight: 600;
+}
+
+.h-field {
+    height: 4rem;
+}
+
+.text-size-1 {
+    font-size: 1.2rem !important;
+}
+.text-size-2 {
+    font-size: 1.4rem !important;
+}
+.text-size-3 {
+    font-size: 1.6rem !important;
+}
+.text-size-4 {
+    font-size: 1.8rem !important;
+}
+
+
 
 .offcanvas-header {
     background-color: var(--contrast-primary-bg-color);
@@ -226,8 +245,4 @@ header {
 }
 .neutral {
     color: var(--neutral-color);
-}
-
-strong { 
-    color: #00ffb3
 }
