@@ -234,6 +234,9 @@ body {
         margin-top: 3rem;
     }
 
+    .image-size {
+        width: 70%;
+    }   
 
 }
 
@@ -245,4 +248,9 @@ body {
 }
 .neutral {
     color: var(--neutral-color);
+}
+
+.link {
+    text-decoration: none !important;
+    color: var(--primary-color) ;
 }
