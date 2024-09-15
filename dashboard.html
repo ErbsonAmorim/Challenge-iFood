@@ -22,38 +22,37 @@
 <body class="scrollbar">
     <header class="fixed-top">
         <nav class="navbar p-0 bg-light fixed-top">
-            <div class="container-fluid">
-                <div>
+            <div class="container-fluid p-0">
+                <div class="p-2">
                     <a class="navbar-brand" href="index.html">
                         <img src="IFood_logo.svg.png" alt="Logo-iFood" class="d-inline-block align-text-top logo">
                     </a>
                 </div>
                 <div>
-                    <h1 class="text-size-4">DASHBOARD FINANCEIRO</h1>
+                    <h1 class="text-size-2">DASHBOARD FINANCEIRO</h1>
                 </div>
-                <a href="index.html"><i class="fa-solid fa-reply retornar-icone"></i></a>
-            </div>
+                <a href="index.html"><i class="fa-solid fa-reply retornar-icone p-2"></i></a>
             </div>
         </nav>
     </header>
 
     <main>
         <!-- campo de pesquisa e filtro -->
-        <nav class="navbar bg-body-tertiary">
-            <div class="nav-main">
-                <div class="centralizar">
-                    <form class="d-flex" role="search">
-                        <input class="search-main button-reset" type="search" placeholder="Pesquisar..." aria-label="Search">
-                        <button class="button-reset pesquisa-btn" type="submit"><i class="fa-solid fa-magnifying-glass icon-pesquisa"></i></button>
-                    </form>
-                </div>
-                <button class="filtro-main button-reset"><i class="fa-solid fa-filter icon-pesquisa"></i></button>
+        <nav class="navbar">
+            <div class="text-center d-flex align-middle h-field mx-auto">
+                <form class="d-flex col-10 bg-light" role="search">
+                    <input class="search-main button-reset col-10" type="search" placeholder="Pesquisar..."
+                        aria-label="Search">
+                    <button class="button-reset pesquisa-btn col-2" type="submit"><i
+                            class="fa-solid fa-magnifying-glass text-size-2"></i></button>
+                </form>
+                <button class="button-reset col-2 bg-light"><i class="fa-solid fa-filter text-size-2"></i></button>
             </div>
         </nav>
 
         <!-- gerar relatório -->
-        <div class="relatorio">
-            <button class="btn-relatorio button-reset" type="submit">Gerar Relatório</button>
+        <div class="text-center mx-auto mb-3 col-12 col-lg-6 col-md-8 col-sm-10">
+            <a href="erro.html" class="col-10 col-xl-4 col-md-6 col-sm-8 btn btn-primary btn-next h-field align-content-center" type="submit">Gerar Relatório</a>
         </div>
 
         <!-- Esatimativa de Capital -->
